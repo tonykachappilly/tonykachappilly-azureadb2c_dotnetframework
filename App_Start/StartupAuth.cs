@@ -24,7 +24,8 @@ namespace azureadpoc_framework48
         private static string instance = EnsureTrailingSlash(ConfigurationManager.AppSettings["ida:Instance"]);
         private static string domain = EnsureTrailingSlash(ConfigurationManager.AppSettings["ida:Domain"]);
         private static string tenantId = ConfigurationManager.AppSettings["ida:TenantId"];
-        private static string postLogoutRedirectUri = ConfigurationManager.AppSettings["ida:RedirectUri"];
+        private static string redirectUri = ConfigurationManager.AppSettings["ida:RedirectUri"];
+        private static string postLogoutRedirectUri = ConfigurationManager.AppSettings["ida:PostLogoutRedirectUri"];
         private static string signUpSignInPolicyId = ConfigurationManager.AppSettings["ida:SignUpSignInPolicyId"];
         private static string signedOutCallbackPath = ConfigurationManager.AppSettings["ida:SignedOutCallbackPath"];
 
@@ -68,9 +69,10 @@ namespace azureadpoc_framework48
                     ClientId = clientId,
                     ClientSecret = "759f3f16-f160-4c74-bbd1-70f65c7fd236",
                     Authority = $"{instance}{domain}{signUpSignInPolicyId}/v2.0/" ,
-                    RedirectUri = postLogoutRedirectUri,
+                    RedirectUri = redirectUri,
                     ResponseType = "code id_token",
                     Scope = $"openid offline_access",
+                    PostLogoutRedirectUri = postLogoutRedirectUri,
                     Notifications = new OpenIdConnectAuthenticationNotifications()
                     {
                         AuthenticationFailed = (context) =>
