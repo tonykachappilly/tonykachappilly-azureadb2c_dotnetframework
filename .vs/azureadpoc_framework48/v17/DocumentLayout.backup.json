@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C508AFB2-7BA4-4905-8172-9E76CA67F843}|azureadpoc_framework48.csproj|C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\app_start\\startupauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C508AFB2-7BA4-4905-8172-9E76CA67F843}|azureadpoc_framework48.csproj|solutionrelative:app_start\\startupauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C508AFB2-7BA4-4905-8172-9E76CA67F843}|azureadpoc_framework48.csproj|c:\\dev\\azure_ad_poc\\azureadpoc_framework48\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{C508AFB2-7BA4-4905-8172-9E76CA67F843}|azureadpoc_framework48.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C508AFB2-7BA4-4905-8172-9E76CA67F843}|azureadpoc_framework48.csproj|C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\app_start\\startupauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C508AFB2-7BA4-4905-8172-9E76CA67F843}|azureadpoc_framework48.csproj|solutionrelative:app_start\\startupauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C508AFB2-7BA4-4905-8172-9E76CA67F843}|azureadpoc_framework48.csproj|C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\Web.config",
               "RelativeDocumentMoniker": "Web.config",
               "ToolTip": "C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\Web.config",
               "RelativeToolTip": "Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-28T07:10:08.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StartupAuth.cs",
               "DocumentMoniker": "C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\App_Start\\StartupAuth.cs",
               "RelativeDocumentMoniker": "App_Start\\StartupAuth.cs",
               "ToolTip": "C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\App_Start\\StartupAuth.cs",
               "RelativeToolTip": "App_Start\\StartupAuth.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAtwEcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAQwE8AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T07:06:47.982Z",
               "EditorCaption": ""
