@@ -86,6 +86,7 @@ namespace azureadpoc_framework48
                         },
                         SecurityTokenValidated = (context) =>
                         {
+                            var code = context?.ProtocolMessage?.Code ?? "";
                             var authenticationContext = new AuthenticationContext();
                             string name = context.AuthenticationTicket.Identity.FindFirst("name")?.Value ?? context.AuthenticationTicket.Identity.FindFirst("displayName")?.Value;
                             context.AuthenticationTicket.Identity.AddClaim(new Claim(ClaimTypes.Name, name, string.Empty));
