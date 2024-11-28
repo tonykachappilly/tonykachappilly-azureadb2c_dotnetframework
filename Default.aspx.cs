@@ -15,6 +15,7 @@ namespace azureadpoc_framework48
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            System.Diagnostics.Trace.TraceInformation("Page load called from .NET Framework app.");
             litClaimsList.Text = string.Empty;
 
             if (!IsPostBack)
