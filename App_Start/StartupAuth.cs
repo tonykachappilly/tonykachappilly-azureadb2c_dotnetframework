@@ -69,10 +69,10 @@ namespace azureadpoc_framework48
                     ClientId = clientId,
                     ClientSecret = "759f3f16-f160-4c74-bbd1-70f65c7fd236",
                     Authority = $"{instance}{domain}{signUpSignInPolicyId}/v2.0/" ,
-                    RedirectUri = redirectUri,
+                    RedirectUri = GetRedirectUri(),
                     ResponseType = "code id_token",
                     Scope = $"openid offline_access",
-                    PostLogoutRedirectUri = postLogoutRedirectUri,
+                    PostLogoutRedirectUri = GetPostLogoutRedirectUri(),
                     Notifications = new OpenIdConnectAuthenticationNotifications()
                     {
                         AuthenticationFailed = (context) =>
@@ -96,6 +96,24 @@ namespace azureadpoc_framework48
 
             // This makes any middleware defined above this line run before the Authorization rule is applied in web.config
             app.UseStageMarker(PipelineStage.Authenticate);
+        }
+
+        string GetRedirectUri()
+        {
+#if DEBUG
+            return "https://localhost:44332/signin-oidc";
+#else
+    return ConfigurationManager.AppSettings["ida:RedirectUri"];
+#endif
+        }
+
+        string GetPostLogoutRedirectUri()
+        {
+#if DEBUG
+            return "https://localhost:44332/";
+#else
+    return ConfigurationManager.AppSettings["ida:PostLogoutRedirectUri"];
+#endif
         }
 
         private async Task<Task> CallForRefreshToken(SecurityTokenReceivedNotification<OpenIdConnectMessage, OpenIdConnectAuthenticationOptions> context)

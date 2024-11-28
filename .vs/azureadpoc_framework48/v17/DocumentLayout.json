@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Web.config",
               "ToolTip": "C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\Web.config",
               "RelativeToolTip": "Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-28T07:10:08.613Z",
               "EditorCaption": ""
@@ -45,9 +45,10 @@
               "RelativeDocumentMoniker": "App_Start\\StartupAuth.cs",
               "ToolTip": "C:\\Dev\\Azure_AD_POC\\azureadpoc_framework48\\App_Start\\StartupAuth.cs",
               "RelativeToolTip": "App_Start\\StartupAuth.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAWwEcAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAQwE8AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T07:06:47.982Z"
+              "WhenOpened": "2024-11-28T07:06:47.982Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
