@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.OpenIdConnect;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,11 +13,19 @@ namespace azureadpoc_framework48.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.IsAuthenticated)
-            {
-                // Redirect to home page if the user is authenticated.
-                Response.Redirect("~/");
-            }
+            Session.Clear();
+            Session.Abandon();
+            System.Diagnostics.Trace.TraceInformation("Signout was called from .NET Framework app.");
+            
+            HttpContext.Current.GetOwinContext().Authentication.SignOut(
+            CookieAuthenticationDefaults.AuthenticationType,
+            OpenIdConnectAuthenticationDefaults.AuthenticationType);
+            //if (Request.IsAuthenticated)
+            //{
+            //    // Redirect to home page if the user is authenticated.
+            //    Response.Redirect("~/");
+            //}
+            Response.Redirect("~/");
         }
     }
 }
