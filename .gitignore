@@ -1,3 +1,26 @@
 ./vs
 ./obj
 ./bin
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Ignore other files
+*.log
+*.tlog
+*.vspscc
+*.vssscc
