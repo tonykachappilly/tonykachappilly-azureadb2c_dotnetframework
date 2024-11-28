@@ -40,6 +40,7 @@ namespace azureadpoc_framework48
                     new CookieAuthenticationOptions
                     {
                         AuthenticationType = CookieAuthenticationDefaults.AuthenticationType,
+                        CookieSameSite = SameSiteMode.None,
                         //LoginPath = new PathString(postLogoutRedirectUri),
                         //LogoutPath = new PathString(signedOutCallbackPath),
                         //ExpireTimeSpan = TimeSpan.FromMinutes(15), // Set cookie expiration time
